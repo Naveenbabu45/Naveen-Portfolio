@@ -1,0 +1,557 @@
+/* =========================
+   GALLERY SECTION
+========================= */
+
+.gallery-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 6rem 2rem 4rem;
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(circle at top, #0d0d0d 0%, #050505 45%, #000 100%);
+
+  color: white;
+  overflow: hidden;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.gallery-title {
+  text-align: center;
+  font-size: clamp(2.3rem, 5vw, 3rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  margin: 0 0 2.5rem;
+
+  background: linear-gradient(
+    90deg,
+    var(--accent),
+    var(--accent-2)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================
+   TAB BUTTONS
+========================= */
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+
+/* Normal tab */
+
+.tab {
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: none;
+  outline: none;
+
+  padding: 0.75rem 1.5rem;
+
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  color: #ffffff;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+
+/* Hover */
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+
+/* Active tab */
+
+.tab.active {
+  background: linear-gradient(
+    90deg,
+    var(--accent),
+    var(--accent-2)
+  );
+
+  color: #ffffff;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 0 18px rgba(0, 183, 255, 0.35);
+
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   POST FEED
+========================= */
+
+.post-feed {
+  width: 100%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 2rem;
+
+  align-items: start;
+}
+
+
+/* =========================
+   POST CARD
+========================= */
+
+.post-card {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(0, 183, 255, 0.14);
+
+  border-radius: 18px;
+
+  padding: 1.25rem;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 0 20px rgba(0, 183, 255, 0.04);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.post-card:hover {
+  border-color: rgba(0, 183, 255, 0.3);
+
+  box-shadow:
+    0 0 28px rgba(0, 183, 255, 0.08);
+}
+
+
+/* =========================
+   CAPTION
+========================= */
+
+.caption {
+  margin: 0 0 1rem;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 1rem;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   PHOTO GRID
+========================= */
+
+.photo-grid {
+  width: 100%;
+
+  display: grid;
+
+  gap: 0.8rem;
+}
+
+
+/* Single image */
+
+.photo-grid.single {
+  grid-template-columns: 1fr;
+}
+
+
+/* Multiple images */
+
+.photo-grid.multi {
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+}
+
+
+/* =========================
+   PHOTO ITEM
+========================= */
+
+.photo-item {
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 13px;
+
+  cursor: pointer;
+
+  background: #111;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.photo-item:hover {
+  border-color: rgba(0, 183, 255, 0.35);
+
+  box-shadow:
+    0 0 20px rgba(0, 183, 255, 0.1);
+}
+
+
+/* Images */
+
+.photo-item img {
+  display: block;
+
+  width: 100%;
+
+  height: 330px;
+
+  object-fit: cover;
+
+  border-radius: 13px;
+
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+
+.photo-item:hover img {
+  filter: brightness(1.05);
+}
+
+
+/* =========================
+   ZOOM OVERLAY
+========================= */
+
+.zoom-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.88);
+
+  backdrop-filter: blur(6px);
+}
+
+
+/* =========================
+   ZOOM IMAGE
+========================= */
+
+.zoom-img {
+  max-width: 90vw;
+
+  max-height: 88vh;
+
+  width: auto;
+
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 0 40px rgba(0, 0, 0, 0.6);
+
+  user-select: none;
+}
+
+
+/* =========================
+   NAVIGATION BUTTONS
+========================= */
+
+.nav-btn {
+  position: fixed;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 50%;
+
+  background: rgba(20, 20, 20, 0.8);
+
+  color: white;
+
+  cursor: pointer;
+
+  z-index: 10001;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.nav-btn:hover {
+  background: var(--accent);
+
+  border-color: var(--accent);
+
+  transform:
+    translateY(-50%)
+    scale(1.08);
+}
+
+
+.nav-btn.left {
+  left: 2rem;
+}
+
+
+.nav-btn.right {
+  right: 2rem;
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn {
+  position: fixed;
+
+  top: 1.5rem;
+  right: 1.5rem;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 50%;
+
+  background: rgba(20, 20, 20, 0.8);
+
+  color: white;
+
+  cursor: pointer;
+
+  z-index: 10001;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.close-btn:hover {
+  background: #ff3b3b;
+
+  border-color: #ff3b3b;
+
+  transform: scale(1.08);
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.gallery-container .post-feed > .post-card:only-child {
+  text-align: center;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .gallery-container {
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  .post-feed {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 1.5rem;
+  }
+
+  .photo-item img {
+    height: 280px;
+  }
+
+  .nav-btn.left {
+    left: 1rem;
+  }
+
+  .nav-btn.right {
+    right: 1rem;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+  .gallery-container {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .gallery-title {
+    margin-bottom: 2rem;
+  }
+
+  .tab-buttons {
+    gap: 0.6rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .tab {
+    padding: 0.65rem 1rem;
+
+    font-size: 0.9rem;
+  }
+
+  .post-feed {
+    grid-template-columns: 1fr;
+
+    gap: 1.25rem;
+  }
+
+  .post-card {
+    padding: 1rem;
+
+    border-radius: 15px;
+  }
+
+  .caption {
+    font-size: 0.95rem;
+  }
+
+  .photo-item img {
+    height: 260px;
+  }
+
+  .zoom-overlay {
+    padding: 1rem;
+  }
+
+  .zoom-img {
+    max-width: 94vw;
+
+    max-height: 80vh;
+  }
+
+  .nav-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .nav-btn.left {
+    left: 0.6rem;
+  }
+
+  .nav-btn.right {
+    right: 0.6rem;
+  }
+
+  .close-btn {
+    top: 1rem;
+    right: 1rem;
+
+    width: 42px;
+    height: 42px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+  .tab {
+    padding: 0.6rem 0.8rem;
+
+    font-size: 0.85rem;
+  }
+
+  .photo-item img {
+    height: 220px;
+  }
+}
