@@ -1,82 +1,143 @@
-# 💻 Kunj Desai — Portfolio Website
-Welcome to my personal portfolio website built with **React.js**, **Framer Motion**, and **modern UI design** principles.
-It showcases my work, projects, skills, and journey as a developer passionate about **AI, ML, and Web Technologies**.
+# 👋 Hi, I'm Naveen Babu
 
-🌐 **Website:** [[[kunj-Portfolio]]](https://kunj-desai.vercel.app/)
+### Software Developer | Computer Science Student | Tech Enthusiast
 
-🖼️ **Screenshots**
-<img width="1902" height="994" alt="Screenshot 2025-11-03 232447" src="https://github.com/user-attachments/assets/6f78ceb0-363c-41e8-9eb9-a26fa814e8ac" />
-<img width="1894" height="992" alt="image" src="https://github.com/user-attachments/assets/8a6eeff0-3ebc-446c-a1ac-5f1a02279ac8" />
-<img width="1903" height="1044" alt="Screenshot 2025-11-04 153204" src="https://github.com/user-attachments/assets/355b1c4c-83e6-4465-9081-bff34bb3ad3b" />
+Welcome to my personal portfolio repository! 🚀
+
+I'm a Computer Science Engineering student passionate about software development, full-stack development, AI/ML, and building real-world applications.
+
 ---
 
-## 🚀 Features
+## 🌐 Live Portfolio
 
-* 🎨 **Modern UI/UX** with black-based aesthetic theme
-* ⚡ Smooth **Framer Motion** animations
-* 💼 **Projects, Resume, and Contact sections**
-* 🧠 Tech-focused portfolio highlighting AI/ML projects
-* 📨 Functional contact form powered by **EmailJS**
-* 🧩 Responsive design for all screen sizes
+🔗 **Portfolio:** https://naveen-portfolio-swart-rho.vercel.app/
+
+---
+
+## 👨‍💻 About Me
+
+- 🎓 B.Tech in Computer Science Engineering
+- 📊 CGPA: 8.5
+- 💻 Interested in Software Development & Full-Stack Development
+- 🤖 Exploring AI/ML and intelligent applications
+- 🧩 Passionate about problem solving
+- 🚀 Continuously learning and building real-world projects
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category            | Tools / Libraries                        |
-| ------------------- | ---------------------------------------- |
-| **Frontend**        | React.js, HTML5, CSS3, JavaScript (ES6+) |
-| **Styling**         | Tailwind CSS / Custom CSS                |
-| **Animation**       | Framer Motion                            |
-| **Contact Form**    | EmailJS                                  |
-| **Version Control** | Git & GitHub                             |
-| **Deployment**      | Vercel / Netlify                         |
+**Languages:** Java, Python, C, C++
+
+**Frontend:** HTML, CSS, JavaScript, React.js
+
+**Backend & Databases:** Node.js, Express.js, SQL, MongoDB
+
+**Tools & Concepts:** Git, GitHub, VS Code, Jupyter Notebook, DSA, OOP, DBMS
 
 ---
 
-## ⚙️ Setup Instructions
+## 🚀 Featured Projects
 
-To run this project locally:
+### 🤖 RecoverX – AI Revenue Recovery Agent
 
-```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/kunj2803/kunjdesai-portfolio.git
+AI-powered revenue recovery agent built for the Razorpay AI Buildathon 2026.
 
-# 2️⃣ Navigate to project directory
-cd kunjdesai-portfolio
+**Tech:** Python, FastAPI, Machine Learning, AI
 
-# 3️⃣ Install dependencies
-npm install
+📈 **Result:** ₹54.7L recovered • +57.9% uplift • 65.8% recovery rate
 
-# 4️⃣ Run development server
-npm start or npm run dev
-```
+🔗 [Live Demo](https://recoverx-dashboard.onrender.com/)
 
-Now open [http://localhost:3000](http://localhost:3000) in your browser 🚀
+🔗 [Source Code](https://github.com/Naveenbabu45/recoverx)
 
 ---
 
-## 📬 Contact
+### 📈 SB Stocks – Stock Trading Application
 
-If you’d like to collaborate or just say hi 👋, feel free to reach out!
+A full-stack paper trading application for stock market simulation and portfolio management.
 
-* 📧 **Email:** [kunjd2803@gmail.com](mailto:kunjd2803@gmail.com)
-* 💼 **LinkedIn:** [linkedin.com/in/kunj-desai-07717b293](https://www.linkedin.com/in/kunj-desai-07717b293/)
+**Tech:** React, Vite, JavaScript, Tailwind CSS, Node.js, Express.js, MongoDB
 
----
+**Features:**
+- User authentication
+- Stock search and charts
+- Paper trading
+- Portfolio tracking
+- Order & transaction history
+- Admin dashboard
 
-## 🌟 Deployment
+🔗 [Live Demo](https://sb-stocks-frontend.onrender.com/)
 
-Deployed seamlessly on **Vercel** for continuous integration and fast CDN delivery.
-Every push to the `main` branch triggers an automatic rebuild and deployment.
-
----
-
-### 🏁 License
-
-This project is open source and available under the [MIT License](LICENSE).
-Feel free to fork, use, and build upon it ⭐
+🔗 [Source Code](https://github.com/Naveenbabu45/STOCK-TRADING-APP)
 
 ---
 
-> *“Showcasing my work and passion through technology 💻”*
+### 🎓 CampusFlow – Student Complaint Management System
+
+A full-stack campus complaint management platform for reporting, tracking, and managing student complaints.
+
+**Tech:** React.js, Node.js, Express.js, MongoDB Atlas, JWT, Tailwind CSS
+
+🔗 [Live Demo](https://campusflow-frontend-green.vercel.app/)
+
+🔗 [Source Code](https://github.com/Naveenbabu45/CampusFlow)
+
+---
+
+### 🌐 Student Union for Nation (SUN) – NGO Website
+
+A responsive website developed for the Student Union for Nation (SUN) organization.
+
+**Tech:** HTML5, CSS3, JavaScript
+
+🔗 [Live Demo](https://sun-ngo-website.vercel.app/)
+
+🔗 [Source Code](https://github.com/Naveenbabu45/SUN-NGO-Website)
+
+---
+
+## 📜 Certifications
+
+- Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
+- Programming in Human-Computer Interaction – NPTEL IIT Kharagpur
+- TCS iON Career Edge – Young Professional
+- AWS Solutions Architecture Job Simulation – Forage
+- Microsoft Azure Virtual Program
+- ServiceNow Virtual Program
+
+---
+
+## 💼 Internships
+
+- ServiceNow Virtual Internship – SmartBridge (AICTE)
+- Microsoft Azure Virtual Internship – Microsoft Elevate (AICTE)
+- AI & ML Internship – SmartBridge (APSCHE)
+- Artificial Intelligence Internship – Edzeeta Pvt. Ltd.
+- Java Development Internship – Navodita Infotech
+
+---
+
+## 🏆 Achievements
+
+- 🚀 Ignite India 5.0 – Wadhwani Foundation
+- 🎖️ Certificate of Appreciation – Campus Ambassador, Edzeeta
+- 🛡️ AI Anantapur Police Hackathon 2026
+
+---
+
+## 📫 Connect With Me
+
+📧 **Email:** naveennaveen78811@gmail.com
+
+💼 **LinkedIn:** https://www.linkedin.com/in/kommavarapunaveenbabu/
+
+🐙 **GitHub:** https://github.com/Naveenbabu45/
+
+📸 **Instagram:** https://www.instagram.com/k.naveen_45/
+
+---
+
+⭐ If you find my projects interesting, feel free to explore the repositories and connect with me!
+
+### 🚀 Thanks for visiting!
